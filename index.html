@@ -3,178 +3,161 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cvetličarna Orhideja · Šopki, adventni venčki in žalna floristika · Maribor</title>
-<meta name="description" content="Cvetličarna Orhideja Forstnerič, Ljubljanska ulica 25a, Maribor. Žalni aranžmaji in venci, šopki za vse priložnosti, adventni venčki. Naročila: 040 237 296.">
+<title>Cvetličarna Orhideja · Ljubljanska ulica 25a, Maribor</title>
+<meta name="description" content="Cvetličarna Orhideja Forstnerič, Ljubljanska ulica 25a, Maribor. Šopki, adventni venčki, aranžmaji in žalni venci. Naročila: 040 237 296.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:wght@400;500;600&family=Caveat:wght@500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#FFF9F4;--s1:#FFFFFF;--s2:#FDEEF2;--s3:#F1D9E0;
-  --t1:#2A1C23;--t2:#6B5862;--t3:#9C8892;
-  --acc:#D6336C;--acc-rgb:214,51,108;--acc-sub:rgba(214,51,108,.09);
-  --zel:#3E8E5E;--kor:#F08A5D;--rum:#F2B84B;--vij:#8B5CC6;
-  --line:rgba(42,28,35,.1);--line2:rgba(42,28,35,.18);
-  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Manrope',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;
-  --expo:cubic-bezier(.16,1,.3,1);--spring:cubic-bezier(.34,1.56,.64,1)
+  --papir:#FBF6EE;--papir2:#F4ECE0;--bela:#FFFDF9;
+  --crnilo:#2B2320;--siva:#6F625B;--svetla:#A2958C;
+  --malina:#B5245A;--list:#4F6B3F;
+  --crta:#E3D7C8;
+  --serif:'DM Serif Display',Georgia,serif;--sans:'Figtree',system-ui,sans-serif;--roka:'Caveat',cursive;
+  --ease:cubic-bezier(.2,.7,.2,1)
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;overflow-x:clip}
-body{background:var(--bg);color:var(--t1);font-family:var(--sans);font-size:clamp(.98rem,1.4vw,1.08rem);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body{background:var(--papir);color:var(--crnilo);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{display:block;max-width:100%}
 a{color:inherit}
-.w{width:min(1240px,100% - 40px);margin-inline:auto}
-h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.02}
-h1{font-size:clamp(3rem,7.4vw,6.6rem)}
-h2{font-size:clamp(2.3rem,5vw,4.4rem)}
-h3{font-size:clamp(1.6rem,2.4vw,2.1rem);font-weight:400}
-em{font-style:italic;color:var(--acc)}
-.lbl{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--t2);display:inline-flex;align-items:center;gap:12px}
-.lbl::before{content:"";width:28px;height:1px;background:var(--acc)}
-.lede{color:var(--t2);max-width:52ch}
-.sek{padding:clamp(5rem,10vw,8.5rem) 0;position:relative}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:3px;font-weight:600;font-size:.95rem;letter-spacing:.02em;text-decoration:none;transition:transform .4s var(--expo),background .3s,border-color .3s;cursor:pointer;border:1px solid transparent}
+.w{width:min(1180px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1;letter-spacing:-.01em}
+h2{font-size:clamp(2.4rem,5.2vw,4.2rem)}
+h2 i,h1 i{color:var(--malina)}
+p{max-width:58ch}
+.roka{font-family:var(--roka);font-size:1.55rem;color:var(--malina);line-height:1}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:6px;font-weight:600;font-size:.98rem;text-decoration:none;transition:background .2s,transform .2s;border:1.5px solid transparent;cursor:pointer;font-family:inherit}
 .btn svg{width:18px;height:18px}
-.btn-acc{background:var(--acc);color:#fff;box-shadow:0 14px 30px -14px rgba(214,51,108,.7)}
-.btn-acc:hover{transform:translateY(-2px);background:#c22a5f}
-.btn-line{border-color:var(--line2);color:var(--t1);background:transparent}
-.btn-line:hover{border-color:var(--acc);color:var(--acc)}
+.btn-m{background:var(--malina);color:#fff}.btn-m:hover{background:#9b1d4c;transform:translateY(-1px)}
+.btn-o{border-color:var(--crnilo);color:var(--crnilo);background:transparent}.btn-o:hover{background:var(--crnilo);color:var(--papir)}
 
-.demo{background:#2A1C23;color:#F9D9E4;font-size:13px;text-align:center;padding:8px 16px;border-bottom:1px solid rgba(217,150,187,.2)}
-.demo b{color:#FF9EC0}
-header{position:sticky;top:0;z-index:40;background:rgba(255,249,244,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.hd{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
-.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
-.logo b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:30px;letter-spacing:-.01em}
-.logo small{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--t2);margin-top:5px}
-nav{display:flex;gap:34px;font-size:14px;font-weight:500;color:var(--t2)}
-nav a{text-decoration:none;transition:color .3s}nav a:hover{color:var(--t1)}
-@media(max-width:900px){nav{display:none}}
+.demo{background:var(--crnilo);color:#E9DED3;font-size:13px;text-align:center;padding:8px 16px}
+.demo b{color:#F3A7C4;font-weight:600}
+header{border-bottom:1px solid var(--crta);background:var(--papir);position:sticky;top:0;z-index:30}
+.hd{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.znak{font-family:var(--serif);font-size:26px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.znak svg{width:26px;height:26px;color:var(--malina)}
+nav{display:flex;gap:28px;font-size:15px}
+nav a{text-decoration:none;color:var(--siva)}nav a:hover{color:var(--crnilo)}
+.hd .tel{font-weight:600;text-decoration:none;display:flex;align-items:center;gap:8px}
+.hd .tel svg{width:17px;height:17px;color:var(--malina)}
+@media(max-width:860px){nav{display:none}}
 
 /* hero */
-.hero{padding:clamp(3.5rem,7vw,6rem) 0 clamp(4rem,8vw,7rem);position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;right:-10%;top:-20%;width:70vw;height:70vw;max-width:900px;max-height:900px;background:radial-gradient(closest-side,rgba(240,138,93,.22),rgba(214,51,108,.10) 55%,transparent);pointer-events:none}
-.hero::after{content:"";position:absolute;left:-15%;bottom:-30%;width:55vw;height:55vw;max-width:700px;max-height:700px;background:radial-gradient(closest-side,rgba(62,142,94,.14),transparent);pointer-events:none}
-.hero-g{display:grid;grid-template-columns:6fr 5fr;gap:clamp(30px,5vw,80px);align-items:center;position:relative}
-.hero h1{margin:26px 0 28px}
-.hero h1 .r{display:block;overflow:hidden}
-.hero h1 .r>span{display:block;transform:translateY(105%);transition:transform 1.2s var(--expo)}
-.hero.on h1 .r>span{transform:none}
-.hero.on h1 .r:nth-child(2)>span{transition-delay:.12s}.hero.on h1 .r:nth-child(3)>span{transition-delay:.24s}
-.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
-.tagi{display:flex;flex-wrap:wrap;gap:8px;margin-top:40px}
-.tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 13px;border-radius:999px;background:var(--acc-sub);color:var(--acc)}
-.tag:nth-child(4n+2){background:rgba(62,142,94,.12);color:var(--zel)}.tag:nth-child(4n+3){background:rgba(240,138,93,.15);color:#C9582A}.tag:nth-child(4n+4){background:rgba(139,92,198,.12);color:var(--vij)}
-.hero-foto{position:relative;height:clamp(460px,58vw,680px)}
-.hero-foto .a{position:absolute;right:0;top:0;width:78%;height:86%;overflow:hidden;border-radius:24px 200px 24px 24px;box-shadow:0 40px 80px -40px rgba(214,51,108,.45)}
-.hero-foto .a img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);transition:transform 2.4s var(--expo)}
-.hero.on .hero-foto .a img{transform:scale(1.02)}
-.hero-foto .b{position:absolute;left:0;bottom:0;width:46%;aspect-ratio:4/5;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 60px -30px rgba(42,28,35,.5);border-radius:2px;opacity:0;transform:translateY(40px);transition:1.2s var(--expo) .5s}
-.hero.on .hero-foto .b{opacity:1;transform:none}
-.hero-foto .b img{width:100%;height:100%;object-fit:cover}
-.hero-foto .zig{position:absolute;right:-6px;bottom:6%;font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--t2);writing-mode:vertical-rl;transform:rotate(180deg)}
-@media(max-width:900px){.hero-g{grid-template-columns:1fr}.hero-foto{height:440px;margin-top:20px}}
+.hero{padding:56px 0 0}
+.hero-t{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end;padding-bottom:40px}
+.hero h1{font-size:clamp(3.3rem,9.5vw,8.4rem);line-height:.92}
+.hero h1 small{display:block;font-family:var(--sans);font-size:clamp(.9rem,1.4vw,1.05rem);font-weight:500;letter-spacing:0;color:var(--siva);margin-bottom:18px}
+.hero-d p{color:var(--siva);margin-bottom:26px}
+.hero-d .acts{display:flex;flex-wrap:wrap;gap:10px}
+.trak-f{display:grid;grid-template-columns:2.1fr 1fr 1.4fr 1fr;gap:10px;height:clamp(260px,38vw,470px)}
+.trak-f figure{overflow:hidden;border-radius:6px;position:relative;background:var(--papir2)}
+.trak-f img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.trak-f figure:hover img{transform:scale(1.04)}
+.trak-f .f2{margin-top:60px}.trak-f .f4{margin-top:30px}
+.trak-f .opomba{position:absolute;right:14px;bottom:12px;color:#fff;font-family:var(--roka);font-size:1.5rem;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+@media(max-width:860px){.hero{padding-top:36px}.hero-t{grid-template-columns:1fr;gap:20px}.trak-f{grid-template-columns:1.4fr 1fr;height:auto}.trak-f figure{height:220px}.trak-f .f2,.trak-f .f4{margin-top:0}.trak-f .f1{grid-row:span 2;height:450px}}
 
-/* trak */
-.trak{overflow:hidden;padding:20px 0;background:linear-gradient(90deg,#D6336C,#F08A5D 50%,#F2B84B)}
-.trak>div{display:flex;width:max-content;animation:tece 42s linear infinite}
-.trak span{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,32px);padding:0 30px;color:#fff;white-space:nowrap}
-.trak span::after{content:"✿";font-style:normal;font-size:.6em;color:#fff;margin-left:60px;vertical-align:middle}
-@keyframes tece{to{transform:translateX(-50%)}}
+/* ponudba list */
+.sek{padding:clamp(80px,11vw,140px) 0}
+.pon-g{display:grid;grid-template-columns:1fr 2fr;gap:60px}
+.pon-g .uvod p{color:var(--siva);margin-top:20px}
+.seznam{border-top:1px solid var(--crnilo)}
+.seznam a{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid var(--crta);text-decoration:none;transition:padding .3s var(--ease)}
+.seznam a:hover{padding-left:12px}
+.seznam h3{font-size:clamp(1.9rem,3.4vw,2.7rem)}
+.seznam p{color:var(--siva);font-size:.97rem;margin-top:6px}
+.seznam .sl{display:flex}
+.seznam .sl img{width:76px;height:96px;object-fit:cover;border-radius:4px;border:3px solid var(--papir);margin-left:-18px;transition:transform .35s var(--ease)}
+.seznam a:hover .sl img:nth-child(1){transform:rotate(-5deg) translateY(-4px)}
+.seznam a:hover .sl img:nth-child(3){transform:rotate(5deg) translateY(-4px)}
+@media(max-width:860px){.pon-g{grid-template-columns:1fr;gap:30px}.seznam .sl img{width:54px;height:70px;margin-left:-14px}}
 
 /* advent */
-.adv-top{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end}
-.datum{display:flex;align-items:baseline;gap:18px;margin-top:30px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.datum b{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,6vw,5rem);line-height:.8}
-.datum span{color:var(--t2);font-size:.95rem}
-.datum strong{display:block;color:var(--t1);font-weight:600}
-.vrsta{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:56px;padding-bottom:18px;scrollbar-width:thin;scrollbar-color:var(--s3) transparent;cursor:grab}
-.vrsta figure{flex:none;width:clamp(260px,30vw,380px);scroll-snap-align:start;position:relative}
-.vrsta .im{aspect-ratio:4/5;overflow:hidden;border-radius:16px;background:var(--s2)}
-.vrsta img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--expo)}
-.vrsta figure:hover img{transform:scale(1.05)}
-.vrsta figcaption{display:flex;justify-content:space-between;margin-top:14px;font-size:.9rem}
-.vrsta figcaption small{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--t3)}
-.namig{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);margin-top:8px}
-@media(max-width:900px){.adv-top{grid-template-columns:1fr;gap:24px}}
+.adv{background:var(--list);color:#F3EEE2}
+.adv-g{display:grid;grid-template-columns:1.15fr 1fr;gap:0;align-items:center}
+.adv-f{position:relative;height:clamp(420px,52vw,640px)}
+.adv-f .a{position:absolute;inset:0 18% 0 0;border-radius:6px;overflow:hidden}
+.adv-f .b{position:absolute;right:0;bottom:-40px;width:42%;aspect-ratio:3/4;border-radius:6px;overflow:hidden;border:6px solid var(--list)}
+.adv-f img{width:100%;height:100%;object-fit:cover}
+.adv-t{padding-left:clamp(20px,5vw,70px)}
+.adv-t h2 i{color:#F3C27A}
+.adv-t p{color:#D7DCCB;margin:22px 0 30px}
+.koledar{display:inline-flex;align-items:center;gap:18px;padding:16px 20px;background:rgba(255,255,255,.08);border-radius:6px;margin-bottom:30px}
+.koledar b{font-family:var(--serif);font-size:3.4rem;line-height:.8;color:#F3C27A;font-weight:400}
+.koledar span{font-size:.95rem;line-height:1.35}
+.adv .btn-m{background:#F3C27A;color:var(--crnilo)}.adv .btn-m:hover{background:#ffd394}
+.adv .roka{color:#F3C27A;display:block;margin-bottom:10px}
+@media(max-width:860px){.adv-g{grid-template-columns:1fr}.adv-f{height:420px;margin-bottom:70px}.adv-t{padding-left:0}}
+
+/* galerija */
+.gal-top{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:44px;flex-wrap:wrap}
+.gal-top p{color:var(--siva)}
+.gal{columns:3 280px;column-gap:12px}
+.gal img{width:100%;margin-bottom:12px;border-radius:6px;break-inside:avoid;transition:transform .6s var(--ease)}
+.gal img:hover{transform:scale(1.015)}
+@media(max-width:700px){.gal{columns:2;column-gap:8px}.gal img{margin-bottom:8px}}
 
 /* zalna */
-.zal{background:#EEF5EE}
-.zal em{color:var(--zel)}.zal .lbl::before{background:var(--zel)}.zal .koraki li::before{color:var(--zel)}.zal blockquote{border-color:var(--zel)}
-#advent{background:#FFF1E6}#advent em{color:var(--kor)}#advent .lbl::before{background:var(--kor)}.datum b{color:var(--kor)!important}
-.zal-g{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,100px);align-items:start}
-.zal blockquote{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.6rem,2.6vw,2.3rem);line-height:1.25;margin:34px 0;padding-left:24px;border-left:1px solid var(--acc)}
-.zal blockquote cite{display:block;font-family:var(--mono);font-style:normal;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--t3);margin-top:14px}
-.koraki{list-style:none;margin-top:30px;counter-reset:k}
-.koraki li{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:20px 0;border-top:1px solid var(--line);counter-increment:k}
-.koraki li::before{content:"0" counter(k);font-family:var(--mono);font-size:.72rem;color:var(--acc);padding-top:5px}
-.koraki b{display:block;font-weight:600}
-.koraki span{color:var(--t2);font-size:.95rem}
-.zal-foto{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(110px,11vw,150px);gap:10px}
-.zal-foto figure{overflow:hidden;border-radius:16px;background:var(--s2)}
-.zal-foto img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--expo),filter .6s}
-.zal-foto figure:hover img{transform:scale(1.05)}
-.z1{grid-column:1/4;grid-row:span 3}.z2{grid-column:4/7;grid-row:span 2}.z3{grid-column:4/7;grid-row:span 2}.z4{grid-column:1/3;grid-row:span 2}.z5{grid-column:3/4;grid-row:span 2}.z6{grid-column:4/5;grid-row:span 1}.z7{grid-column:5/7;grid-row:span 1}
-@media(max-width:900px){.zal-g{grid-template-columns:1fr}.zal-foto{grid-auto-rows:90px}}
-
-/* sopki */
-.sop-top{display:grid;grid-template-columns:7fr 5fr;gap:50px;align-items:end}
-.masonry{columns:4 260px;column-gap:14px;margin-top:60px}
-.masonry figure{break-inside:avoid;margin-bottom:14px;overflow:hidden;border-radius:2px;position:relative;background:var(--s2)}
-.masonry img{width:100%;transition:transform 1.2s var(--expo)}
-.masonry figure:hover img{transform:scale(1.04)}
-.masonry figcaption{position:absolute;left:12px;bottom:12px;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;background:rgba(255,255,255,.88);backdrop-filter:blur(6px);padding:7px 10px;border:0;color:var(--t1);border-radius:999px;opacity:0;transform:translateY(6px);transition:.4s var(--expo)}
-.masonry figure:hover figcaption{opacity:1;transform:none}
-.priloznosti{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
-@media(max-width:900px){.sop-top{grid-template-columns:1fr;gap:24px}.masonry{columns:2;column-gap:10px}.masonry figure{margin-bottom:10px}.masonry figcaption{opacity:1;transform:none}}
+.zal{background:var(--papir2)}
+.zal-g{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,100px);align-items:start}
+.zal-t p{color:var(--siva);margin-top:20px}
+.zal-t blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.25;margin:34px 0;color:var(--crnilo)}
+.zal-t blockquote span{display:block;font-family:var(--sans);font-style:normal;font-size:.85rem;color:var(--svetla);margin-top:10px}
+.zal-f{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.zal-f img{width:100%;height:100%;object-fit:cover;border-radius:6px}
+.zal-f .v{grid-column:1/3;aspect-ratio:4/3}
+.zal-f .m{aspect-ratio:3/4}
+@media(max-width:860px){.zal-g{grid-template-columns:1fr}}
 
 /* narocilo */
-.nar{background:linear-gradient(160deg,#FDEEF2,#F3ECFB)}
-.nar em{color:var(--vij)}.nar .lbl::before{background:var(--vij)}
-.nar-g{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,6vw,90px);align-items:start}
-.obr{border:1px solid var(--line);background:#fff;box-shadow:0 40px 80px -50px rgba(42,28,35,.35);padding:clamp(22px,3vw,38px);border-radius:2px}
-.obr .vr{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.polje{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
-.polje label{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--t2)}
-.polje input,.polje select,.polje textarea{background:var(--s1);border:1px solid var(--line2);color:var(--t1);font:inherit;font-size:16px;padding:13px 14px;border-radius:2px;outline:none;transition:border-color .3s}
-.polje textarea{min-height:110px;resize:vertical}
-.polje input:focus,.polje select:focus,.polje textarea:focus{border-color:var(--acc)}
-.izbira{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-.izbira input{display:none}
-.izbira label{padding:10px 14px;border:1px solid var(--line2);font-size:.88rem;cursor:pointer;border-radius:2px;transition:.3s}
-.izbira input:checked+label{border-color:var(--acc);color:var(--acc);background:var(--acc-sub)}
-.obr .opo{font-size:.82rem;color:var(--t3);margin-top:12px}
-.odziv{display:none;margin-top:16px;padding:16px;border:1px solid rgba(var(--acc-rgb),.4);background:var(--acc-sub);font-size:.92rem}
-.kontakti{margin-top:34px}
-.kontakti a,.kontakti div{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-top:1px solid var(--line);text-decoration:none}
-.kontakti small{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);padding-top:4px}
-.kontakti span{text-align:right}
-@media(max-width:900px){.nar-g{grid-template-columns:1fr}.obr .vr{grid-template-columns:1fr}}
+.nar-g{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(40px,6vw,90px);align-items:start}
+.nar-t p{color:var(--siva);margin-top:20px}
+.tel-v{display:block;font-family:var(--serif);font-size:clamp(2.4rem,4.4vw,3.4rem);text-decoration:none;margin-top:30px;color:var(--malina)}
+.obr{background:var(--bela);border:1px solid var(--crta);border-radius:10px;padding:clamp(22px,3vw,36px)}
+.izb{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.izb input{display:none}
+.izb label{padding:9px 14px;border:1px solid var(--crta);border-radius:6px;font-size:.93rem;cursor:pointer;transition:.2s}
+.izb input:checked+label{background:var(--crnilo);color:var(--papir);border-color:var(--crnilo)}
+.vr{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.po{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.po label{font-size:.88rem;font-weight:600}
+.po input,.po textarea{font:inherit;font-size:16px;padding:12px 13px;border:1px solid var(--crta);border-radius:6px;background:var(--papir);color:var(--crnilo);outline:none;transition:border-color .2s}
+.po input:focus,.po textarea:focus{border-color:var(--malina)}
+.po textarea{min-height:100px;resize:vertical}
+.obr .mal{font-size:.85rem;color:var(--svetla);margin-top:12px}
+.odziv{display:none;margin-top:16px;padding:14px 16px;background:#FBEFF3;border-radius:6px;font-size:.93rem}
+@media(max-width:860px){.nar-g{grid-template-columns:1fr}.vr{grid-template-columns:1fr}}
 
-/* trgovina */
-.trg-g{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,6vw,90px);align-items:center}
-.trg-foto{aspect-ratio:4/5;overflow:hidden;border-radius:200px 24px 24px 24px}
-.trg-foto img{width:100%;height:100%;object-fit:cover}
-@media(max-width:900px){.trg-g{grid-template-columns:1fr}.trg-foto{max-height:520px}}
-
-.map{margin-top:40px;border:1px solid var(--line);aspect-ratio:16/7;overflow:hidden;border-radius:2px;}
+/* obisk */
+.obisk{border-top:1px solid var(--crta)}
+.ob-g{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+.naslov{font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,3.6rem);line-height:1.05}
+.ob-t p{color:var(--siva);margin:22px 0 28px}
+.ob-t .acts{display:flex;gap:10px;flex-wrap:wrap}
+.ob-f{position:relative}
+.ob-f img{border-radius:6px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.ob-f .roka{position:absolute;left:-10px;bottom:-34px;transform:rotate(-4deg)}
+.map{margin-top:70px;border-radius:6px;overflow:hidden;aspect-ratio:21/8;border:1px solid var(--crta)}
 .map iframe{width:100%;height:100%;border:0}
-@media(max-width:700px){.map{aspect-ratio:4/3}}
+@media(max-width:860px){.ob-g{grid-template-columns:1fr}.map{aspect-ratio:4/3}}
 
-footer{border-top:1px solid var(--line);padding:60px 0 120px;color:var(--t2);font-size:.92rem}
-.ft{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px}
-.ft .logo b{font-size:40px;color:var(--t1)}
-.ft a{text-decoration:none}.ft a:hover{color:var(--acc)}
-.ft-sp{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:.8rem;color:var(--t3)}
+footer{background:var(--crnilo);color:#BFB2A8;padding:56px 0 110px;font-size:.95rem}
+.ft{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.ft .znak{color:#fff;font-size:30px}
+.ft a{text-decoration:none}.ft a:hover{color:#fff}
+.ft-sp{margin-top:36px;font-size:.82rem;color:#8a7d75}
 
-.mob{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:50;display:none;gap:8px}
-.mob .btn{flex:1;min-height:52px;box-shadow:0 14px 34px -12px rgba(0,0,0,.7)}
-.mob .btn-line{background:rgba(255,255,255,.95);backdrop-filter:blur(10px)}
+.mob{position:fixed;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));display:none;gap:8px;z-index:40}
+.mob .btn{flex:1;justify-content:center;min-height:50px;box-shadow:0 10px 26px -10px rgba(43,35,32,.5)}
+.mob .btn-o{background:var(--bela)}
 @media(max-width:760px){.mob{display:flex}}
 
-.zav{opacity:0;transform:translateY(34px);transition:opacity 1s var(--expo),transform 1s var(--expo)}
+.zav{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .zav.on{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.zav{opacity:1;transform:none}.hero h1 .r>span{transform:none}.hero-foto .b{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.zav{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -183,154 +166,146 @@ footer{border-top:1px solid var(--line);padding:60px 0 120px;color:var(--t2);fon
 
 <header>
   <div class="w hd">
-    <a class="logo" href="#"><b>Orhideja</b><small>Cvetličarna · Maribor</small></a>
-    <nav><a href="#sopki">Šopki</a><a href="#advent">Advent</a><a href="#zalna">Žalna floristika</a><a href="#narocilo">Naročilo</a><a href="#obisk">Obisk</a></nav>
-    <a class="btn btn-acc" href="tel:+38640237296" style="padding:12px 18px">Pokliči</a>
+    <a class="znak" href="#"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 29V16"/><path d="M16 16c-6 0-9-4-9-9 5 0 9 3 9 9z"/><path d="M16 16c6 0 9-4 9-9-5 0-9 3-9 9z"/><path d="M16 16c-3-4-3-8 0-12 3 4 3 8 0 12z"/></svg>Orhideja</a>
+    <nav><a href="#ponudba">Ponudba</a><a href="#advent">Advent</a><a href="#galerija">Galerija</a><a href="#narocilo">Naročilo</a><a href="#obisk">Obisk</a></nav>
+    <a class="tel" href="tel:+38640237296"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>040 237 296</a>
   </div>
 </header>
 
-<section class="hero" id="hero">
-  <div class="w hero-g">
-    <div>
-      <div class="lbl">Cvetličarna Orhideja Forstnerič</div>
-      <h1><span class="r"><span>Rože, ki</span></span><span class="r"><span><em>polepšajo</em></span></span><span class="r"><span><em>vsak dan.</em></span></span></h1>
-      <p class="lede">Šopki, ki polepšajo dan, praznični adventni venčki in aranžmaji za vsako priložnost, narejeni z ljubeznijo do cvetja. Na Ljubljanski ulici 25a v Mariboru.</p>
-      <div class="acts">
-        <a class="btn btn-acc" href="tel:+38640237296"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>040 237 296</a>
-        <a class="btn btn-line" href="#narocilo">Oddaj naročilo</a>
+<section class="hero">
+  <div class="w">
+    <div class="hero-t">
+      <h1 class="zav"><small>Cvetličarna Forstnerič · Ljubljanska ulica 25a, Maribor</small>Orhideja<br><i>cvetje</i> z dušo</h1>
+      <div class="hero-d zav">
+        <p>Šopki za rojstne dneve in kar tako, adventni venčki, aranžmaji za dom in žalni venci. Vse sestavimo ročno, v naši cvetličarni na Ljubljanski ulici.</p>
+        <div class="acts">
+          <a class="btn btn-m" href="tel:+38640237296"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Pokličite nas</a>
+          <a class="btn btn-o" href="#narocilo">Naročite po sporočilu</a>
+        </div>
       </div>
-      <div class="tagi"><span class="tag">Šopki</span><span class="tag">Adventni venčki</span><span class="tag">Aranžmaji</span><span class="tag">Slovenski ustvarjalci</span></div>
     </div>
-    <div class="hero-foto">
-      <div class="a"><img src="img/sopek-pisan.webp" alt="Pisan šopek z vrtnicami in okrasnim ohrovtom"></div>
-      <div class="b"><img src="img/sopek-roza2.webp" alt="Šopek rožnatih vrtnic"></div>
-      <div class="zig">Ročno izdelano · Maribor</div>
+    <div class="trak-f zav">
+      <figure class="f1"><img src="img/sopek-pisan.webp" alt="Pisan šopek z vrtnicami in okrasnim ohrovtom"><span class="opomba">ta teden</span></figure>
+      <figure class="f2"><img src="img/sopek-roza2.webp" alt="Šopek rožnatih vrtnic"></figure>
+      <figure class="f3"><img src="img/advent-roza.webp" alt="Adventni venček z rožnatimi svečami"></figure>
+      <figure class="f4"><img src="img/sopek-rumen.webp" alt="Rumen šopek"></figure>
     </div>
   </div>
 </section>
 
-<div class="trak" aria-hidden="true"><div>
-  <span>adventni venčki</span><span>žalni venci in aranžmaji</span><span>šopki za vse priložnosti</span><span>ikebane in sveče</span><span>izdelki slovenskih ustvarjalcev</span>
-  <span>adventni venčki</span><span>žalni venci in aranžmaji</span><span>šopki za vse priložnosti</span><span>ikebane in sveče</span><span>izdelki slovenskih ustvarjalcev</span>
-</div></div>
-
-<section class="sek" id="sopki">
-  <div class="w">
-    <div class="sop-top">
-      <div class="zav"><div class="lbl">Šopki</div><h2 style="margin-top:22px">Ni treba čakati <em>na pravi trenutek.</em></h2></div>
-      <div class="zav">
-        <p class="lede">Včasih je najlepše dobiti šopek prav takrat, ko ga najmanj pričakuješ. Skupaj izberemo cvetje za vas ali za nekoga, ki vam veliko pomeni.</p>
-        <div class="priloznosti"><span class="tag">Rojstni dan</span><span class="tag">Obletnica</span><span class="tag">Zahvala</span><span class="tag">Poroka</span><span class="tag">Kar tako</span></div>
-      </div>
+<section class="sek" id="ponudba">
+  <div class="w pon-g">
+    <div class="uvod zav">
+      <span class="roka">kaj pripravimo</span>
+      <h2 style="margin-top:8px">Za vsako <i>priložnost</i></h2>
+      <p>Povejte nam, komu je cvetje namenjeno in katere barve ima rad. Ostalo uredimo mi.</p>
     </div>
-    <div class="masonry zav">
-      <figure><img src="img/sopek-roza2.webp" alt="Šopek rožnatih vrtnic" loading="lazy"><figcaption>Rožnate vrtnice</figcaption></figure>
-      <figure><img src="img/sopek-beli.jpg" alt="Bel šopek v lončku" loading="lazy"><figcaption>Nežno belo</figcaption></figure>
-      <figure><img src="img/sopek-rumen.webp" alt="Rumen šopek" loading="lazy"><figcaption>Sončno rumeno</figcaption></figure>
-      <figure><img src="img/sopek-ohrovt.jpg" alt="Šopek z okrasnim ohrovtom" loading="lazy"><figcaption>Z okrasnim ohrovtom</figcaption></figure>
-      <figure><img src="img/sopek-roza.webp" alt="Šopek v pastelnih barvah" loading="lazy"><figcaption>Pastelno</figcaption></figure>
-      <figure><img src="img/aranzma-vrtnica.webp" alt="Aranžma z rdečo vrtnico" loading="lazy"><figcaption>Aranžma z vrtnico</figcaption></figure>
-      <figure><img src="img/zalni-pisan.jpg" alt="Pisan aranžma" loading="lazy"><figcaption>Aranžma</figcaption></figure>
+    <div class="seznam zav">
+      <a href="#galerija"><div><h3>Šopki</h3><p>Rojstni dnevi, obletnice, zahvale ali samo zato, ker ste se nekoga spomnili.</p></div><div class="sl"><img src="img/sopek-roza.webp" alt=""><img src="img/sopek-beli.jpg" alt=""><img src="img/sopek-ohrovt.jpg" alt=""></div></a>
+      <a href="#advent"><div><h3>Adventni venčki</h3><p>Klasični ali v vaših barvah, s svečami, ki jih izberete sami.</p></div><div class="sl"><img src="img/advent-zlati.jpg" alt=""><img src="img/svece-bozic.webp" alt=""><img src="img/bozicna-zvezda.webp" alt=""></div></a>
+      <a href="#galerija"><div><h3>Aranžmaji in darila</h3><p>Košarice, sveče, dekoracije in izdelki slovenskih ustvarjalcev.</p></div><div class="sl"><img src="img/kosarica.webp" alt=""><img src="img/aranzma-vrtnica.webp" alt=""><img src="img/trgovina.jpg" alt=""></div></a>
+      <a href="#zalna"><div><h3>Žalni venci in aranžmaji</h3><p>Ob slovesu pomagamo izbrati cvetje, ki se poslovi namesto besed.</p></div><div class="sl"><img src="img/venec-roza.jpg" alt=""><img src="img/srce.webp" alt=""><img src="img/venec-beli.jpg" alt=""></div></a>
     </div>
   </div>
 </section>
 
-<section class="sek" id="advent">
+<section class="sek adv" id="advent">
+  <div class="w adv-g">
+    <div class="adv-f zav">
+      <div class="a"><img src="img/advent-zlati.jpg" alt="Adventni aranžma z zlatimi svečami" loading="lazy"></div>
+      <div class="b"><img src="img/svece-bozic.webp" alt="Sveče z božičnimi zvezdami" loading="lazy"></div>
+    </div>
+    <div class="adv-t zav">
+      <span class="roka">advent 2026</span>
+      <h2>Police so polne <i>prazničnih venčkov</i></h2>
+      <p>Venčke, sveče in okraske lahko izberete v cvetličarni. Če želite svojega, v posebnih barvah ali velikosti, nam to sporočite nekaj dni prej.</p>
+      <div class="koledar"><b>29.</b><span>november<br>prva adventna nedelja</span></div><br>
+      <a class="btn btn-m" href="#narocilo">Naročite venček</a>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="galerija">
   <div class="w">
-    <div class="adv-top">
-      <div class="zav"><div class="lbl">Advent 2026</div><h2 style="margin-top:22px">Venček, ki <em>prižge praznike.</em></h2></div>
-      <div class="zav">
-        <p class="lede">Naše police so polne venčkov, svečk, okraskov in detajlov, ki dom spremenijo v zimsko pravljico. Venček lahko izberete v cvetličarni ali ga naročite po svojih barvah.</p>
-        <div class="datum"><b>29</b><span><strong>Prva adventna nedelja</strong>november · venček naročite pravočasno</span></div>
-      </div>
+    <div class="gal-top zav">
+      <h2>Iz naše <i>cvetličarne</i></h2>
+      <p>Nekaj izdelkov iz zadnjih tednov. Več jih objavljamo na <a href="https://www.instagram.com/cvetlicarnaforstneric/" target="_blank" rel="noopener">Instagramu</a>.</p>
     </div>
-    <div class="vrsta zav" id="vrsta">
-      <figure><div class="im"><img src="img/advent-roza.webp" alt="Adventni venček v rožnatih tonih" loading="lazy"></div><figcaption>Rožnati venček<small>advent</small></figcaption></figure>
-      <figure><div class="im"><img src="img/advent-zlati.jpg" alt="Adventni aranžma z zlatimi svečami" loading="lazy"></div><figcaption>Zlate sveče<small>advent</small></figcaption></figure>
-      <figure><div class="im"><img src="img/svece-bozic.webp" alt="Sveče z božičnimi zvezdami" loading="lazy"></div><figcaption>Sveče in brezovo lubje<small>božič</small></figcaption></figure>
-      <figure><div class="im"><img src="img/bozicna-zvezda.webp" alt="Božična zvezda v vazi" loading="lazy"></div><figcaption>Božična zvezda<small>dekoracija</small></figcaption></figure>
-      <figure><div class="im"><img src="img/kosarica.webp" alt="Jesenska košarica" loading="lazy"></div><figcaption>Praznična košarica<small>darilo</small></figcaption></figure>
+    <div class="gal zav">
+      <img src="img/sopek-roza2.webp" alt="Šopek rožnatih vrtnic" loading="lazy">
+      <img src="img/advent-roza.webp" alt="Adventni venček" loading="lazy">
+      <img src="img/sopek-beli.jpg" alt="Bel šopek v lončku" loading="lazy">
+      <img src="img/sopek-ohrovt.jpg" alt="Šopek z okrasnim ohrovtom" loading="lazy">
+      <img src="img/kosarica.webp" alt="Jesenska košarica" loading="lazy">
+      <img src="img/sopek-rumen.webp" alt="Rumen šopek" loading="lazy">
+      <img src="img/bozicna-zvezda.webp" alt="Božična zvezda" loading="lazy">
+      <img src="img/sopek-roza.webp" alt="Pastelen šopek" loading="lazy">
+      <img src="img/aranzma-vrtnica.webp" alt="Aranžma z rdečo vrtnico" loading="lazy">
     </div>
-    <div class="namig">← povlecite za več →</div>
   </div>
 </section>
 
 <section class="sek zal" id="zalna">
   <div class="w zal-g">
-    <div class="zav">
-      <div class="lbl">Žalna floristika</div>
-      <h2 style="margin-top:22px">Ob slovesu <em>smo tu za vas.</em></h2>
-      <blockquote>Za tiste, ki jih ne moremo več objeti, a jih za vedno nosimo v srcu.<cite>Cvetličarna Orhideja</cite></blockquote>
-      <p class="lede">Venci, ikebane, srca in žalni aranžmaji v barvah, ki vas spominjajo na vaše najdražje. Pomagamo vam izbrati cvetje, ko je težko misliti na podrobnosti.</p>
-      <ol class="koraki">
-        <li><div><b>Pokličete ali pišete</b><span>Povejte nam datum, pokopališče in kaj si želite.</span></div></li>
-        <li><div><b>Skupaj izberemo</b><span>Cvetje, barve in velikost, po želji tudi trak z napisom.</span></div></li>
-        <li><div><b>Pripravimo pravočasno</b><span>Aranžma je pripravljen za slovo, brez skrbi na vaši strani.</span></div></li>
-      </ol>
-      <div class="acts"><a class="btn btn-acc" href="tel:+38640237296">Pokličite 040 237 296</a></div>
+    <div class="zal-t zav">
+      <span class="roka" style="color:var(--list)">ob slovesu</span>
+      <h2 style="margin-top:8px">Smo tu za vas, <i style="color:var(--list)">ko je težko</i></h2>
+      <p>Venci, ikebane, srca in žalni aranžmaji v barvah, ki vas spominjajo na vaše najdražje. Pokličite nas, povejte datum, pokopališče in kaj si želite. Skupaj izberemo cvetje in po želji trak z napisom, aranžma pa pripravimo pravočasno.</p>
+      <blockquote>»Za tiste, ki jih ne moremo več objeti, a jih za vedno nosimo v srcu.«<span>Iz objave Cvetličarne Orhideja</span></blockquote>
+      <a class="btn btn-o" href="tel:+38640237296">Pokličite 040 237 296</a>
     </div>
-    <div class="zal-foto zav">
-      <figure class="z1"><img src="img/venec-1.jpg" alt="Žalni venec iz rožnatih vrtnic" loading="lazy"></figure>
-      <figure class="z2"><img src="img/srce.webp" alt="Žalno srce iz vrtnic in krizantem" loading="lazy"></figure>
-      <figure class="z3"><img src="img/zalni-rdeci.jpg" alt="Rdeč žalni aranžma" loading="lazy"></figure>
-      <figure class="z4"><img src="img/venec-beli.jpg" alt="Bel žalni venec" loading="lazy"></figure>
-      <figure class="z5"><img src="img/zalni-dolg.jpg" alt="Podolgovat žalni aranžma" loading="lazy"></figure>
-      <figure class="z6"><img src="img/venec-roza.jpg" alt="Venec z rožnatimi vrtnicami" loading="lazy"></figure>
-      <figure class="z7"><img src="img/venec-2.jpg" alt="Velik žalni venec" loading="lazy"></figure>
+    <div class="zal-f zav">
+      <img class="v" src="img/venec-1.jpg" alt="Žalni venec iz rožnatih vrtnic" loading="lazy">
+      <img class="m" src="img/zalni-rdeci.jpg" alt="Rdeč žalni aranžma" loading="lazy">
+      <img class="m" src="img/venec-2.jpg" alt="Žalni venec" loading="lazy">
     </div>
   </div>
 </section>
 
-<section class="sek nar" id="narocilo">
+<section class="sek" id="narocilo">
   <div class="w nar-g">
-    <div class="zav">
-      <div class="lbl">Naročilo</div>
-      <h2 style="margin-top:22px">Povejte nam, <em>kaj potrebujete.</em></h2>
-      <p class="lede" style="margin-top:24px">Izpolnite kratek obrazec in sporočilo nam pošljete z enim klikom. Poklicali vas bomo in se dogovorili za podrobnosti. Če se vam mudi, nas raje pokličite.</p>
-      <div class="kontakti">
-        <a href="tel:+38640237296"><small>Telefon</small><span>040 237 296</span></a>
-        <div><small>Naslov</small><span>Ljubljanska ulica 25a<br>2000 Maribor</span></div>
-        <a href="https://www.instagram.com/cvetlicarnaforstneric/" target="_blank" rel="noopener"><small>Instagram</small><span>@cvetlicarnaforstneric</span></a>
-      </div>
+    <div class="nar-t zav">
+      <span class="roka">naročilo</span>
+      <h2 style="margin-top:8px">Napišite, kaj <i>potrebujete</i></h2>
+      <p>Izpolnite nekaj vrstic in nam jih pošljete kot SMS. Oglasimo se vam in se dogovorimo za podrobnosti. Če se vam mudi, nas raje pokličite.</p>
+      <a class="tel-v" href="tel:+38640237296">040 237 296</a>
     </div>
     <form class="obr zav" id="obr">
-      <div class="polje"><label>Kaj potrebujete</label></div>
-      <div class="izbira">
-        <input type="radio" name="vrsta" id="v2" value="Šopek" checked><label for="v2">Šopek</label>
-        <input type="radio" name="vrsta" id="v1" value="Žalni aranžma ali venec"><label for="v1">Žalni aranžma / venec</label>
-        <input type="radio" name="vrsta" id="v3" value="Adventni venček"><label for="v3">Adventni venček</label>
-        <input type="radio" name="vrsta" id="v4" value="Drugo"><label for="v4">Drugo</label>
+      <div class="izb">
+        <input type="radio" name="vrsta" id="v1" value="Šopek" checked><label for="v1">Šopek</label>
+        <input type="radio" name="vrsta" id="v2" value="Adventni venček"><label for="v2">Adventni venček</label>
+        <input type="radio" name="vrsta" id="v3" value="Aranžma ali darilo"><label for="v3">Aranžma / darilo</label>
+        <input type="radio" name="vrsta" id="v4" value="Žalni venec ali aranžma"><label for="v4">Žalni venec</label>
       </div>
       <div class="vr">
-        <div class="polje"><label for="ime">Ime in priimek</label><input id="ime" required autocomplete="name"></div>
-        <div class="polje"><label for="tel">Telefon</label><input id="tel" type="tel" required autocomplete="tel"></div>
+        <div class="po"><label for="ime">Ime in priimek</label><input id="ime" required autocomplete="name"></div>
+        <div class="po"><label for="tel">Telefon</label><input id="tel" type="tel" required autocomplete="tel"></div>
       </div>
       <div class="vr">
-        <div class="polje"><label for="dat">Za kdaj</label><input id="dat" type="date"></div>
-        <div class="polje"><label for="kje">Pokopališče / priložnost</label><input id="kje" placeholder="npr. Pobrežje, rojstni dan"></div>
+        <div class="po"><label for="dat">Za kdaj</label><input id="dat" type="date"></div>
+        <div class="po"><label for="kje">Priložnost ali pokopališče</label><input id="kje" placeholder="npr. rojstni dan"></div>
       </div>
-      <div class="polje"><label for="zel">Želje</label><textarea id="zel" placeholder="Barve, cvetje, velikost, napis na traku …"></textarea></div>
-      <button class="btn btn-acc" type="submit" style="width:100%">Pošlji naročilo</button>
-      <p class="opo">Sporočilo se odpre v aplikaciji za SMS na vašem telefonu. Nič se ne pošlje brez vaše potrditve.</p>
+      <div class="po"><label for="zel">Želje</label><textarea id="zel" placeholder="Barve, cvetje, velikost, napis na traku …"></textarea></div>
+      <button class="btn btn-m" type="submit" style="width:100%;justify-content:center">Pošlji kot SMS</button>
+      <p class="mal">Sporočilo se odpre v aplikaciji za SMS na vašem telefonu. Brez vaše potrditve se ne pošlje nič.</p>
       <div class="odziv" id="odziv"></div>
     </form>
   </div>
 </section>
 
-<section class="sek" id="obisk">
+<section class="sek obisk" id="obisk">
   <div class="w">
-    <div class="trg-g">
-      <div class="trg-foto zav"><img src="img/trgovina.jpg" alt="Notranjost Cvetličarne Orhideja" loading="lazy"></div>
-      <div class="zav">
-        <div class="lbl">Obiščite nas</div>
-        <h2 style="margin-top:22px">Pridite izbrat <em>svoj košček čarobnosti.</em></h2>
-        <p class="lede" style="margin-top:24px">V cvetličarni vas čakajo sveže cvetje, sveče, okraski in sezonski aranžmaji. Podpiramo tudi slovenske ustvarjalce, zato pri nas najdete izdelke iz naravnih materialov.</p>
-        <div class="kontakti">
-          <div><small>Naslov</small><span>Ljubljanska ulica 25a, 2000 Maribor</span></div>
-          <a href="tel:+38640237296"><small>Naročila</small><span>040 237 296</span></a>
+    <div class="ob-g">
+      <div class="ob-t zav">
+        <span class="roka">obiščite nas</span>
+        <div class="naslov" style="margin-top:10px">Ljubljanska ulica 25a<br>2000 Maribor</div>
+        <p>Pridite izbrat šopek, venček ali drobno darilo. Z veseljem vam svetujemo pri izbiri barv in cvetja.</p>
+        <div class="acts">
+          <a class="btn btn-m" href="tel:+38640237296">040 237 296</a>
+          <a class="btn btn-o" href="https://maps.google.com/?q=Ljubljanska+ulica+25a,+2000+Maribor" target="_blank" rel="noopener">Pot do nas</a>
         </div>
-        <div class="acts"><a class="btn btn-line" href="https://maps.google.com/?q=Ljubljanska+ulica+25a,+2000+Maribor" target="_blank" rel="noopener">Odpri v Zemljevidih</a></div>
       </div>
+      <div class="ob-f zav"><img src="img/trgovina.jpg" alt="Izdelki pred Cvetličarno Orhideja" loading="lazy"><span class="roka">pred našimi vrati</span></div>
     </div>
     <div class="map zav"><iframe loading="lazy" title="Zemljevid" src="https://maps.google.com/maps?q=Ljubljanska%20ulica%2025a,%202000%20Maribor&z=16&output=embed"></iframe></div>
   </div>
@@ -339,31 +314,24 @@ footer{border-top:1px solid var(--line);padding:60px 0 120px;color:var(--t2);fon
 <footer>
   <div class="w">
     <div class="ft">
-      <div><a class="logo" href="#"><b>Orhideja</b><small>Cvetličarna Forstnerič · Maribor</small></a></div>
-      <div>Ljubljanska ulica 25a<br>2000 Maribor<br><a href="tel:+38640237296">040 237 296</a></div>
-      <div><a href="https://www.instagram.com/cvetlicarnaforstneric/" target="_blank" rel="noopener">Instagram</a></div>
+      <a class="znak" href="#">Orhideja</a>
+      <div>Cvetličarna Orhideja Forstnerič<br>Ljubljanska ulica 25a, 2000 Maribor</div>
+      <div><a href="tel:+38640237296">040 237 296</a><br><a href="https://www.instagram.com/cvetlicarnaforstneric/" target="_blank" rel="noopener">Instagram</a></div>
     </div>
-    <div class="ft-sp">© 2026 Cvetličarna Orhideja Forstnerič · Predogled pripravil Spletni Atelje</div>
+    <div class="ft-sp">© 2026 Cvetličarna Orhideja Forstnerič · predogled pripravil Spletni Atelje</div>
   </div>
 </footer>
 
-<div class="mob"><a class="btn btn-acc" href="tel:+38640237296">Pokliči</a><a class="btn btn-line" href="#narocilo">Naroči</a></div>
+<div class="mob"><a class="btn btn-m" href="tel:+38640237296">Pokliči</a><a class="btn btn-o" href="#narocilo">Naroči</a></div>
 
 <script>
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
-document.querySelectorAll('.zav').forEach((el,i)=>{el.style.transitionDelay=(el.parentElement.querySelectorAll(':scope>.zav').length>1?([...el.parentElement.children].indexOf(el)%3)*0.1:0)+'s';io.observe(el)});
-requestAnimationFrame(()=>setTimeout(()=>document.getElementById('hero').classList.add('on'),80));
-// drag scroll
-const v=document.getElementById('vrsta');let d=false,sx=0,sl=0;
-v.addEventListener('mousedown',e=>{d=true;sx=e.pageX;sl=v.scrollLeft;v.style.cursor='grabbing'});
-addEventListener('mouseup',()=>{d=false;v.style.cursor=''});
-v.addEventListener('mousemove',e=>{if(!d)return;e.preventDefault();v.scrollLeft=sl-(e.pageX-sx)});
-// order form -> SMS
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.zav').forEach(el=>io.observe(el));
 document.getElementById('obr').addEventListener('submit',e=>{e.preventDefault();
   const g=id=>document.getElementById(id).value.trim();const vr=document.querySelector('input[name=vrsta]:checked').value;
-  const t=`Naročilo (spletna stran): ${vr}\nIme: ${g('ime')}\nTel: ${g('tel')}\nZa kdaj: ${g('dat')||'-'}\nKje/priložnost: ${g('kje')||'-'}\nŽelje: ${g('zel')||'-'}`;
+  const t=`Naročilo: ${vr}\nIme: ${g('ime')}\nTel: ${g('tel')}\nZa kdaj: ${g('dat')||'-'}\nPriložnost/pokopališče: ${g('kje')||'-'}\nŽelje: ${g('zel')||'-'}`;
   const o=document.getElementById('odziv');o.style.display='block';
-  o.innerHTML='To je predogled, zato se sporočilo ne pošlje. Na pravi strani se vam tukaj odpre SMS na številko 040 237 296 s tem besedilom:<br><br>'+t.replace(/\n/g,'<br>');
+  o.innerHTML='To je predogled, zato se sporočilo ne pošlje. Na pravi strani se tukaj odpre SMS na 040 237 296 s tem besedilom:<br><br>'+t.replace(/\n/g,'<br>');
 });
 </script>
 </body>
